@@ -10,7 +10,8 @@ https://projecteuler.net/archives
 */
 public class Main {
     public static void main(String[] args) {
-	    Problem_4();
+	//    Problem_4();
+	    Problem10 problem = new Problem10();
     }
 
     /*
