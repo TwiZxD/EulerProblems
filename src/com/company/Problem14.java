@@ -20,7 +20,7 @@ public class Problem14 {
     }
 
     private int testNumber(long n) {
-        ArrayList<Long> numbers = new ArrayList<>();
+        ArrayList<Long> numbers = new ArrayList<Long>();
         while(n!=1) {
       //      System.out.print(n + ", ");
             numbers.add(n);
