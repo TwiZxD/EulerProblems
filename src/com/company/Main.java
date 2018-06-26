@@ -6,7 +6,7 @@ username: twizeuler
 */
 public class Main {
     public static void main(String[] args) {
-	    new Problem15();
+	    new Problem11();
     }
 
 
