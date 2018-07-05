@@ -34,7 +34,7 @@ public class Problem12 {
     private void solveProblem() {
         int currentNumber = 10000;
 
-        //Adding 500 triangleNumbers
+        //Adding 10000 triangleNumbers
         for(int i = 0; i< 10000; i++) {
             addNextTriangleNumber();
         }
