@@ -7,8 +7,8 @@ username: twizeuler
 public class Main {
     public static void main(String[] args) {
         long timerStart = System.currentTimeMillis();
-
-	    new Problem21();
+        //TODO Problem 24
+	    new Problem44();
 
 	    System.err.println("Found in: " + (System.currentTimeMillis() - timerStart) + " ms");
     }
