@@ -50,7 +50,6 @@ public class Problem44 {
                     System.out.println("Pj = " + j + " Pk = " + k);
                     System.out.println("Pj = " + pentagonalNumbers.get(j) + " Pk = " + pentagonalNumbers.get(k) );
                     System.out.println("Dif = " + ( pentagonalNumbers.get(k) - (pentagonalNumbers.get(j)) ));
-                   // found = true;
                     break;
                 }
             }
