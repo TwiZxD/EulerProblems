@@ -1,6 +1,6 @@
 package com.company;
 
-import com.company.algorithms.testDijkstra;
+import com.company.algorithms.tester;
 
 /**
 My programming solutions for euler problems found at: https://projecteuler.net/
@@ -13,7 +13,7 @@ public class Main {
         //TODO Problem 24
         //TODO Problem 45
 	    //new Problem22();
-        new testDijkstra();
+        new tester();
 	    System.err.println("Found in: " + (System.currentTimeMillis() - timerStart) + " ms");
     }
 }
