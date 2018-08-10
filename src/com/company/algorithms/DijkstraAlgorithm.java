@@ -17,6 +17,10 @@ public class DijkstraAlgorithm {
         this.edges = directedGraph.getEdges();
     }
 
+    /**
+     * Calculates the minimum cost to travel from a starting node to each other node.
+     * @param start the starting node.
+     */
     public void shortestPath(Node start) {
         visited = new HashSet<>();
         cost = new HashMap<>();
@@ -82,7 +86,7 @@ public class DijkstraAlgorithm {
     }
 
     /**
-     * Finds a node that has not yet been visited by the dikstra algorithm and have the lowest cost.
+     * Finds the node which has the lowest cost and has not yet been visited by the algoritm.
      */
     private Node findNextNode(HashMap<String, Integer> cost, HashSet<String> visited) {
         int minValue = Integer.MAX_VALUE;
