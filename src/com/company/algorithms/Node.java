@@ -4,16 +4,19 @@ package com.company.algorithms;
  * Created by Johan Segerlund on 2018-07-30.
  */
 public class Node {
-    private final String id;
+    private final int id;
 
-    public Node(String id) {
+    public Node(int id) {
         this.id = id;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
+    public String getStringId() {
+        return Integer.toString(id);
+    }
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
@@ -22,7 +25,7 @@ public class Node {
         if (getClass() != obj.getClass())
             return false;
         Node other = (Node) obj;
-        return id.equals(other.getId());
+        return id == other.getId();
     }
 
     public String toString() {

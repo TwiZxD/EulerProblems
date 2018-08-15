@@ -24,13 +24,13 @@ public class DijkstraAlgorithm {
     public void shortestPath(Node start) {
         visited = new HashSet<>();
         cost = new HashMap<>();
-        cost.put(start.getId(), 0);
+        cost.put(start.getStringId(), 0);
         Node node;
 
         while(true) {
             node = findNextNode(cost, visited);
             if(node == null) break; //Can't find next node? -> Finished.
-            visited.add(node.getId());
+            visited.add(node.getStringId());
             neightbours = getNeighbours(node);
             updateCost(node);
         }
@@ -44,9 +44,9 @@ public class DijkstraAlgorithm {
 
         for(Edge edge : neightbours) {
             if(!visited.contains(edge.getDestination().getId())) {
-                neighbour = edge.getDestination().getId();
+                neighbour = edge.getDestination().getStringId();
                 neighbourWeight = edge.getWeight();
-                sourceWeight = cost.get(node.getId());
+                sourceWeight = cost.get(node.getStringId());
 
                 //Update only if the cost is lower.
                 if(cost.containsKey(neighbour)) {
@@ -107,7 +107,7 @@ public class DijkstraAlgorithm {
             return null;
         }
         for (Node node : nodes) {
-            if (node.getId().equals(id)) {
+            if (node.getStringId().equals(id)) {
                 return node;
             }
         }
