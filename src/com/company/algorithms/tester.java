@@ -32,14 +32,13 @@ public class tester {
     }
 
     private void dijkstraTest() {
-
-        Node node0 = new Node("0");
-        Node node1 = new Node("1");
-        Node node2 = new Node("2");
-        Node node3 = new Node("3");
-        Node node4 = new Node("4");
-        Node node5 = new Node("5");
-        Node node6 = new Node("6");
+        Node node0 = new Node(0);
+        Node node1 = new Node(1);
+        Node node2 = new Node(2);
+        Node node3 = new Node(3);
+        Node node4 = new Node(4);
+        Node node5 = new Node(5);
+        Node node6 = new Node(6);
         nodes.add(node0);
         nodes.add(node1);
         nodes.add(node2);
@@ -57,13 +56,21 @@ public class tester {
         edges.add(new Edge(node0, node6, 2));
         Graph graph = new Graph(nodes,edges);
 
+        /** Graph:
+         *           __3____
+         *       ___|___ ___|___
+         *      6   0   2   4   5
+         *          |___|
+         *             1
+         */
+
         DijkstraAlgorithm algoritm = new DijkstraAlgorithm(graph);
         algoritm.shortestPath(node0);
     }
 
     private void createNodes(int amountOfNodes) {
         for (int i = 0; i < amountOfNodes; i++) {
-            Node node = new Node("" + i);
+            Node node = new Node(i);
             nodes.add(node);
         }
     }
