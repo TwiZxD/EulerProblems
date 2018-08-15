@@ -1,6 +1,8 @@
 package com.company;
 
-import com.company.algorithms.tester;
+import com.company.algorithms.*;
+import com.company.datastructures.*;
+import com.company.projectEuler.*;
 
 /**
 My programming solutions for euler problems found at: https://projecteuler.net/
@@ -13,7 +15,9 @@ public class Main {
         //TODO Problem 24
         //TODO Problem 45
 	    //new Problem22();
-        new tester();
+
+        //new AlgorithmTester();
+        //new DatastructuresTester();
 	    System.err.println("Found in: " + (System.currentTimeMillis() - timerStart) + " ms");
     }
 }
