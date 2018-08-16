@@ -12,7 +12,7 @@ import java.io.*;
 public class Problem22 {
     private BufferedReader reader = null;
 
-    Problem22() {
+    public Problem22() {
         try {
             test();
         } catch (IOException e) {
