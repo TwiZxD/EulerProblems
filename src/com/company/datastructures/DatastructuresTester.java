@@ -5,6 +5,9 @@ package com.company.datastructures;
  */
 
 public class DatastructuresTester {
+    public DatastructuresTester() {
+        run();
+    }
 
     public void run() {
         /** Algorithms*/
@@ -12,12 +15,10 @@ public class DatastructuresTester {
         SelectionSort ss = new SelectionSort();
         QuickSort qs = new QuickSort();
         BubbleSort bs = new BubbleSort();
-
+        MergeSort ms = new MergeSort();
         /** Choose algorithm to test*/
-        testArray(bs);
-
+        testArray(ms);
     }
-
     private static void testArray(IAlgorithm algo){
         int[] oneToTwo = {1,2};
         int[] twoToOne = {2,1};

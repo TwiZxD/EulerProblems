@@ -15,7 +15,8 @@ public class Main {
         long timerStart = System.currentTimeMillis();
 
         /** What to do... */
-        new Problem22();
+        new DatastructuresTester();
+//        new Problem22();
 
 	    System.err.println("Found in: " + (System.currentTimeMillis() - timerStart) + " ms");
     }
